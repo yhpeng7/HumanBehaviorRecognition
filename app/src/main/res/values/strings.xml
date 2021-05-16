@@ -1,0 +1,49 @@
+<resources>
+    <string name="app_name">HumanBehaviorRecognition</string>
+    <string name="title_activity_main">MainActivity</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="nav_header_title">西安邮电大学</string>
+    <string name="nav_header_subtitle">http://www.xiyou.edu.cn/</string>
+    <string name="nav_header_desc">Navigation header</string>
+    <string name="action_about">关于</string>
+    <string name="action_logout">退出登录</string>
+    <string name="action_cancel_account">注销账号</string>
+
+    <string name="password_limit">0123456789abcdefghigklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ</string>
+
+    <string name="menu_age">0</string>
+    <string name="menu_gender">男</string>
+    <string name="menu_region">陕西省-西安市-长安区</string>
+    <string name="menu_tools">Tools</string>
+    <string name="menu_setting_profile">编辑个人资料</string>
+    <string name="menu_choose_server">选择服务器</string>
+    <string name="menu_choose_sensor">选择传感器</string>
+    <string name="menu_send">Send</string>
+
+    <string name="login_hint_username">用户名/邮箱</string>
+    <string name="login_hint_password">密码</string>
+    <string name="login_reset_password">重置密码</string>
+    <string name="login_login">登录</string>
+    <string name="login_register">注册</string>
+
+    <string name="register_hint_username">用户名</string>
+    <string name="register_hint_email">邮箱</string>
+    <string name="register_verify_email">验证</string>
+    <string name="register_auth_code">验证码</string>
+
+    <string name="reset_password_hint_email">邮箱</string>
+    <string name="reset_password_hint_auth_code">验证码</string>
+    <string name="reset_password_hint_new_password">输入新密码</string>
+    <string name="reset_password_hint_verify_email">验证</string>
+    <string name="reset_password_hint_reset">确认重置</string>
+
+    <string name="edit_profile_hint_username">用户名</string>
+    <string name="edit_profile_hint_email">邮箱</string>
+    <string name="edit_profile_verify_email">验证</string>
+    <string name="edit_profile_hint_auth_code">验证码</string>
+    <string name="edit_profile_hint_age">生日</string>
+    <string name="edit_profile_hint_gender">性别</string>
+    <string name="edit_profile_hint_region">地区</string>
+    <string name="edit_profile_commit">提交</string>
+</resources>

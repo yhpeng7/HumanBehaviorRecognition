@@ -1,0 +1,179 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".mvp.EditProfileActivity">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/edit_profile_avatar"
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:layout_marginTop="100dp"
+            android:src="@drawable/ic_avatar"
+            app:layout_constraintEnd_toEndOf="@+id/edit_profile_et_username"
+            app:layout_constraintStart_toStartOf="@+id/edit_profile_et_username"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <ImageView
+            android:id="@+id/edit_profile_iv_back"
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="16dp"
+            android:src="@drawable/ic_back"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <EditText
+            android:id="@+id/edit_profile_et_username"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginStart="40dp"
+            android:layout_marginEnd="40dp"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/ic_bg_et_login"
+            android:hint="@string/edit_profile_hint_username"
+            android:maxLines="1"
+            android:paddingLeft="16dp"
+            android:paddingRight="16dp"
+            android:textColorHint="@color/grey"
+            android:textCursorDrawable="@drawable/ic_edit_text_cursor"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/edit_profile_avatar" />
+
+        <EditText
+            android:id="@+id/edit_profile_et_age"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginStart="40dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="40dp"
+            android:background="@drawable/ic_bg_et_login"
+            android:hint="@string/edit_profile_hint_age"
+            android:textCursorDrawable="@drawable/ic_edit_text_cursor"
+            android:focusable="false"
+            android:focusableInTouchMode="false"
+            android:paddingStart="16dp"
+            android:paddingEnd="86dp"
+            android:textColorHint="@color/grey"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/edit_profile_et_vc" />
+
+        <RadioGroup
+            android:id="@+id/edit_profile_rg_gender"
+            android:layout_width="wrap_content"
+            android:layout_height="50dp"
+            android:layout_marginStart="48dp"
+            android:layout_marginTop="10dp"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/edit_profile_et_age">
+
+            <RadioButton
+                android:id="@+id/edit_profile_rb_male"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="男"
+                android:buttonTint="@color/colorPrimary"
+                android:textColor="@color/grey"
+                android:textSize="18sp" />
+
+            <RadioButton
+                android:id="@+id/edit_profile_rb_female"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:buttonTint="@color/colorPrimary"
+                android:text="女"
+                android:textColor="@color/grey"
+                android:textSize="18sp" />
+        </RadioGroup>
+
+        <EditText
+            android:id="@+id/edit_profile_et_region"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginStart="40dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="40dp"
+            android:background="@drawable/ic_bg_et_login"
+            android:hint="@string/edit_profile_hint_region"
+            android:textCursorDrawable="@drawable/ic_edit_text_cursor"
+            android:focusable="false"
+            android:focusableInTouchMode="false"
+            android:paddingStart="16dp"
+            android:paddingEnd="86dp"
+            android:textColorHint="@color/grey"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/edit_profile_rg_gender" />
+
+        <EditText
+            android:id="@+id/edit_profile_et_email"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginStart="40dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="40dp"
+            android:layout_marginBottom="5dp"
+            android:maxLines="1"
+            android:background="@drawable/ic_bg_et_login"
+            android:inputType="textEmailAddress"
+            android:hint="@string/edit_profile_hint_email"
+            android:textCursorDrawable="@drawable/ic_edit_text_cursor"
+            android:paddingStart="16dp"
+            android:paddingEnd="56dp"
+            android:textColorHint="@color/grey"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/edit_profile_et_username" />
+
+        <TextView
+            android:id="@+id/edit_profile_tv_verify_email"
+            android:layout_width="wrap_content"
+            android:layout_height="30dp"
+            android:gravity="center_vertical"
+            android:paddingRight="16dp"
+            android:text="@string/edit_profile_verify_email"
+            android:textColor="@color/colorPrimary"
+            app:layout_constraintBottom_toBottomOf="@+id/edit_profile_et_email"
+            app:layout_constraintEnd_toEndOf="@+id/edit_profile_et_email"
+            app:layout_constraintTop_toTopOf="@+id/edit_profile_et_email" />
+
+        <EditText
+            android:id="@+id/edit_profile_et_vc"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginStart="40dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="40dp"
+            android:maxLines="1"
+            android:background="@drawable/ic_bg_et_login"
+            android:hint="@string/edit_profile_hint_auth_code"
+            android:textCursorDrawable="@drawable/ic_edit_text_cursor"
+            android:paddingStart="16dp"
+            android:paddingEnd="86dp"
+            android:textColorHint="@color/grey"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/edit_profile_et_email" />
+
+        <Button
+            android:id="@+id/edit_profile_btn_reset"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginStart="40dp"
+            android:layout_marginEnd="40dp"
+            android:layout_marginTop="15dp"
+            android:layout_marginBottom="70dp"
+            android:background="@drawable/ic_bg_btn_login"
+            android:text="@string/edit_profile_commit"
+            android:textColor="@color/white"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/edit_profile_et_region"
+            app:layout_constraintBottom_toBottomOf="parent"/>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</ScrollView>

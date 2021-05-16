@@ -1,0 +1,244 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.DataCollectionFragment">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/cardView"
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginEnd="16dp"
+            app:cardCornerRadius="16dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <TextView
+                android:id="@+id/data_collection_tv_status"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginStart="16dp"
+                android:layout_marginEnd="16dp"
+                android:textColor="@color/colorPrimary"
+                android:textSize="20sp"
+                android:text="请选择运动类型" />
+        </androidx.cardview.widget.CardView>
+
+        <View
+            android:id="@+id/view_1"
+            android:layout_width="7dp"
+            android:layout_height="50dp"
+            android:layout_marginStart="16dp"
+            android:background="#24A7E5"
+            app:layout_constraintBottom_toBottomOf="@+id/textView_1"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/textView_1" />
+
+        <TextView
+            android:id="@+id/textView_1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="7dp"
+            android:text="走"
+            android:textColor="@color/black"
+            android:textSize="20sp"
+            app:layout_constraintBottom_toBottomOf="@+id/data_collection_switch_walk"
+            app:layout_constraintStart_toEndOf="@+id/view_1"
+            app:layout_constraintTop_toTopOf="@+id/data_collection_switch_walk" />
+
+        <Switch
+            android:id="@+id/data_collection_switch_walk"
+            android:layout_width="wrap_content"
+            android:layout_height="50dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginEnd="16dp"
+            android:thumb="@drawable/switch_ios_thumb"
+            android:track="@drawable/switch_ios_track_selector"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/cardView" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/colorPrimary"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/data_collection_switch_walk"/>
+
+        <View
+            android:id="@+id/view_2"
+            android:layout_width="7dp"
+            android:layout_height="50dp"
+            android:layout_marginStart="16dp"
+            android:background="#24A7E5"
+            app:layout_constraintBottom_toBottomOf="@+id/textView_2"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/textView_2" />
+
+        <TextView
+            android:id="@+id/textView_2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="7dp"
+            android:text="跑"
+            android:textColor="@color/black"
+            android:textSize="20sp"
+            app:layout_constraintBottom_toBottomOf="@+id/data_collection_switch_run"
+            app:layout_constraintStart_toEndOf="@+id/view_2"
+            app:layout_constraintTop_toTopOf="@+id/data_collection_switch_run" />
+
+        <Switch
+            android:id="@+id/data_collection_switch_run"
+            android:layout_width="wrap_content"
+            android:layout_height="50dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginEnd="16dp"
+            android:thumb="@drawable/switch_ios_thumb"
+            android:track="@drawable/switch_ios_track_selector"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/data_collection_switch_walk" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/colorPrimary"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/data_collection_switch_run"/>
+
+        <View
+            android:id="@+id/view_3"
+            android:layout_width="7dp"
+            android:layout_height="50dp"
+            android:layout_marginStart="16dp"
+            android:background="#24A7E5"
+            app:layout_constraintBottom_toBottomOf="@+id/textView_3"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/textView_3" />
+
+        <TextView
+            android:id="@+id/textView_3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="7dp"
+            android:text="跳"
+            android:textColor="@color/black"
+            android:textSize="20sp"
+            app:layout_constraintBottom_toBottomOf="@+id/data_collection_switch_jump"
+            app:layout_constraintStart_toEndOf="@+id/view_3"
+            app:layout_constraintTop_toTopOf="@+id/data_collection_switch_jump" />
+
+        <Switch
+            android:id="@+id/data_collection_switch_jump"
+            android:layout_width="wrap_content"
+            android:layout_height="50dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginEnd="16dp"
+            android:thumb="@drawable/switch_ios_thumb"
+            android:track="@drawable/switch_ios_track_selector"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/data_collection_switch_run" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/colorPrimary"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/data_collection_switch_jump"/>
+
+        <View
+            android:id="@+id/view_4"
+            android:layout_width="7dp"
+            android:layout_height="50dp"
+            android:layout_marginStart="16dp"
+            android:background="#24A7E5"
+            app:layout_constraintBottom_toBottomOf="@+id/textView_4"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/textView_4" />
+
+        <TextView
+            android:id="@+id/textView_4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="7dp"
+            android:text="上楼"
+            android:textColor="@color/black"
+            android:textSize="20sp"
+            app:layout_constraintBottom_toBottomOf="@+id/data_collection_switch_upstairs"
+            app:layout_constraintStart_toEndOf="@+id/view_4"
+            app:layout_constraintTop_toTopOf="@+id/data_collection_switch_upstairs" />
+
+        <Switch
+            android:id="@+id/data_collection_switch_upstairs"
+            android:layout_width="wrap_content"
+            android:layout_height="50dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginEnd="16dp"
+            android:thumb="@drawable/switch_ios_thumb"
+            android:track="@drawable/switch_ios_track_selector"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/data_collection_switch_jump" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/colorPrimary"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/data_collection_switch_upstairs"/>
+
+        <View
+            android:id="@+id/view_5"
+            android:layout_width="7dp"
+            android:layout_height="50dp"
+            android:layout_marginStart="16dp"
+            android:background="#24A7E5"
+            app:layout_constraintBottom_toBottomOf="@+id/textView_5"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/textView_5" />
+
+        <TextView
+            android:id="@+id/textView_5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="7dp"
+            android:text="下楼"
+            android:textColor="@color/black"
+            android:textSize="20sp"
+            app:layout_constraintBottom_toBottomOf="@+id/data_collection_switch_downstairs"
+            app:layout_constraintStart_toEndOf="@+id/view_5"
+            app:layout_constraintTop_toTopOf="@+id/data_collection_switch_downstairs" />
+
+        <Switch
+            android:id="@+id/data_collection_switch_downstairs"
+            android:layout_width="wrap_content"
+            android:layout_height="50dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginEnd="16dp"
+            android:thumb="@drawable/switch_ios_thumb"
+            android:track="@drawable/switch_ios_track_selector"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/data_collection_switch_upstairs" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/colorPrimary"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            android:layout_marginBottom="88dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/data_collection_switch_downstairs"/>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</ScrollView>
